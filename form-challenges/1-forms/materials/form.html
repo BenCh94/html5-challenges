@@ -85,21 +85,49 @@
                <li><label class="field">
                   Password:<input type="password" name="password" placeholder="Password...">
                </label></li>
+      </form>
+         </fieldset>
+            </ul>
+      <form>
+         <fieldset>
+            <legend></legend>
+            <ul>      
                <li><label class="field">
                   Telephone:<input type="tel" name="telephone number" placeholder="Tel...(353)88 8888888" pattern="tel">
                </label></li>
-               <li><label>
-                  Passport number:<input type="passport" name="Passport number" placeholder="Passport number..." pattern="[0-9]{7}[A-Za-z]{1}">
+               <li><label class="field">
+                  Passport number:<input type="passport" name="Passport number" placeholder="Passport number..." pattern="[0-9]{7}[A-Za-z]{1}" title="7 digits and 1 letter">
                </label></li>
-               <li><label>
-                  Eircode:<input type="text" name="Eircode" pattern="[A-Za-z]{1}[0-9]{2}[A-Za-z]{2}[0-9]{2}" placeholder="Eircode...">
+               <li><label class="field">
+                  Eircode:<input type="text" name="Eircode" pattern="[A-Za-z]{1}[0-9]{2}[A-Za-z]{2}[0-9]{2}" placeholder="Eircode..." title="i.e A11AA11">
                </label></li>
-               <li><label>
-                  Credit Card:<input type="numer" name="Card number" pattern="[0-9]{16}" placeholder="Card number...">
+               <li><label class="field">
+                  Credit Card:<input type="numer" name="Card number" pattern="[0-9]{16}" placeholder="Card number..." title="16 digits">
                </label></li>
-               <li><label>
+               <li><label class="field">
                   Age:<input type="number" name="Age" placeholder="Age..." min="1" max="120">
                </label></li>
+            </ul>
+         </fieldset>
+      </form>         
+               <li><label class="field">
+                  Date:<input type="date" name="Date" placeholder="dd/mm/yyyy">
+               </label></li>
+               <li><label>
+                  Would you like:
+                  <ol>
+                     <li><input type="checkbox" name="Starter">Starter</li>
+                     <li><input type="checkbox" name="Main">Main</li>
+                     <li><input type="checkbox" name="Desert">Desert</li>
+                  </ol>
+               </label></li>
+               <li><label>
+                  Gender:
+                  <input type="radio" name="Male">Male
+                  <input type="radio" name="Female">Female
+                  <input type="radio" name="other">Prefer not to say
+               </label></li>
+
             </ul>
           </fieldset>
           <button>Submit</button>
