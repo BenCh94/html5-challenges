@@ -85,12 +85,12 @@
                <li><label class="field">
                   Password:<input type="password" name="password" placeholder="Password...">
                </label></li>
-      </form>
-         </fieldset>
             </ul>
+         </fieldset>
+      </form>              
       <form>
          <fieldset>
-            <legend></legend>
+            <legend>Personal Details</legend>
             <ul>      
                <li><label class="field">
                   Telephone:<input type="tel" name="telephone number" placeholder="Tel...(353)88 8888888" pattern="tel">
@@ -109,7 +109,11 @@
                </label></li>
             </ul>
          </fieldset>
-      </form>         
+      </form>
+      <form>
+         <fieldset>
+         <legend>Prefrences</legend>
+            <ul>         
                <li><label class="field">
                   Date:<input type="date" name="Date" placeholder="dd/mm/yyyy">
                </label></li>
@@ -127,8 +131,23 @@
                   <input type="radio" name="Female">Female
                   <input type="radio" name="other">Prefer not to say
                </label></li>
-
-            </ul>
+               <li><label for="marital status">Marital Status:</label>
+               <select id="marital status">
+                  <option value="single">Single</option>
+                  <option value="married">Married</option>
+                  <option value="civil partnership">Civil Partnership</option>
+                  <option value="divorced">Divorced</option>
+                  <option value="widowed">Widowed</option>
+               </select>
+               </li>
+               <li><label for="browser">Browser</label>
+               <input list="browser" name="browser">
+               <datalist id="browser">
+                  <option value="Internet Explorer"></option>
+                  <option value="Firefox"></option>
+                  <option value="Chrome"></option>
+                  <option value="Opera"></option>
+               </datalist></li>
           </fieldset>
           <button>Submit</button>
        </form>  
