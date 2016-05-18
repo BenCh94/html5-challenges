@@ -86,7 +86,19 @@
                   Password:<input type="password" name="password" placeholder="Password...">
                </label></li>
                <li><label class="field">
-                  Telephone:<input type="tel" name="telephone number" placeholder="Tel...(353)88 8888888">
+                  Telephone:<input type="tel" name="telephone number" placeholder="Tel...(353)88 8888888" pattern="tel">
+               </label></li>
+               <li><label>
+                  Passport number:<input type="passport" name="Passport number" placeholder="Passport number..." pattern="[0-9]{7}[A-Za-z]{1}">
+               </label></li>
+               <li><label>
+                  Eircode:<input type="text" name="Eircode" pattern="[A-Za-z]{1}[0-9]{2}[A-Za-z]{2}[0-9]{2}" placeholder="Eircode...">
+               </label></li>
+               <li><label>
+                  Credit Card:<input type="numer" name="Card number" pattern="[0-9]{16}" placeholder="Card number...">
+               </label></li>
+               <li><label>
+                  Age:<input type="number" name="Age" placeholder="Age..." min="1" max="120">
                </label></li>
             </ul>
           </fieldset>
